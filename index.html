@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Javascript・jQueryのファイルリンク -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./js/script.js"></script>
 </head>
 <body>
   <header>
@@ -101,7 +104,7 @@
         <span class="ja-title">想い</span>
       </div>
       <div class="thought-container">
-        <div class="staff-box box-design">
+        <div class="staff-box active box-design">
           <img class="staff-image" src="./image/thought01.png" alt="シェフ田中啓介">
           <div class="staff-text">
             <h3 class="staff-title">お客様が口に運ぶ瞬間までをデザインする</h3>
@@ -109,10 +112,25 @@
             <p class="staff-name about-text">パティシエ 田中啓介</p>
           </div>
         </div>
+        <div class="staff-box">
+          <img class="staff-image" src="./image/thought01.png" alt="ホール 安田裕美">
+          <div class="staff-text">
+            <h3 class="staff-title">笑顔を絶やさず</h3>
+            <p class="staff-about about-text">マカロンと合うお飲み物をオススメするのが私たちの仕事です。特に初めていらっしゃるお客様にはステキな時間を過ごして頂けるよう、笑顔で接客する事を心がけています。dawn CAFEでのひと時が次の活力になれれば幸せです。</p>
+            <p class="staff-name about-text">ホール 安田裕美</p>
+          </div>
+        </div>
+        <div class="staff-box">
+          <img class="staff-image" src="./image/thought01.png" alt="バリスタ 沖田杏奈">
+          <div class="staff-text">
+            <h3 class="staff-title">マカロン×〇〇=∞</h3>
+            <p class="staff-about about-text">マカロンに合うお飲み物をプロデュースしています。マカロンひとつ取っても、鼻から抜ける風味はそれぞれ特徴があります。ステキな時間を最適なお飲み物とマカロンを食べながら過ごしませんか？</p>
+            <p class="staff-name about-text">バリスタ 沖田杏奈</p>
+          </div>
+        </div>
         <span class="slide-button prev"></span>
         <span class="slide-button next"></span>
       </div>
-    </div>
   </section>
   <section id="macaronlife">
     <div class="container">
@@ -122,28 +140,72 @@
       </div>
       <div class="life-wrapper">
         <div class="life-type">
-          <a href="#" class="modalopen">
+          <a href="#" class="modalopen" data-target="modal01">
             <img class="life-img" src="./image/macaronlife01.png" alt="teatime">
-            <p class="life-neme">tea time</p>
+            <p class="life-name">tea time</p>
           </a>
         </div>
+        <!-- modal -->
+        <div class="modal-main js-modal" id="modal01">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">Tea Time</p>
+              <img src="./image/macaronlife01.png" alt="teatime" class="image-modal">
+              <p class="inner-text">マカロンとコーヒーのマリアージュ</p>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
         <div class="life-type">
-          <a href="#" class="modalopen">
+          <a href="#" class="modalopen" data-target="modal02">
             <img class="life-img" src="./image/macaronlife02.png" alt="party">
-            <p class="life-neme">party</p>
+            <p class="life-name">party</p>
           </a>
         </div>
+        <!-- modal -->
+        <div class="modal-main js-modal" id="modal02">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">party</p>
+              <img src="./image/macaronlife02.png" alt="teatime" class="image-modal">
+              <p class="inner-text" 仲間とお酒を囲んだ後の至福のスイーツ></p>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
         <div class="life-type">
-          <a href="#" class="modalopen">
+          <a href="#" class="modalopen" data-target="modal03">
             <img class="life-img" src="./image/macaronlife03.png" alt="gifts">
-            <p class="life-neme">gifts</p>
+            <p class="life-name">gifts</p>
           </a>
         </div>
+        <!-- modal -->
+        <div class="modal-main js-modal" id="modal03">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">gifts</p>
+              <img src="./image/macaronlife03.png" alt="teatime" class="image-modal">
+              <p class="inner-text">愛情いっぱいのマカロンを大切な人に</p>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
         <div class="life-type">
-          <a href="#" class="modalopen">
+          <a href="#" class="modalopen" data-target="modal04">
             <img class="life-img" src="./image/macaronlife04.png" alt="season">
-            <p class="life-neme">season</p>
+            <p class="life-name">season</p>
           </a>
+        </div>
+        <!-- modal -->
+        <div class="modal-main js-modal" id="modal04">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">season</p>
+              <img src="./image/macaronlife04.png" alt="teatime" class="image-modal">
+              <p class="inner-text">時代の移り変わりにマカロンで彩りを</p>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
