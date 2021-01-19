@@ -10,8 +10,8 @@
 </head>
 <body>
   <header>
-    <div class="g-navi">
-      <nav class="container nav-wrapper">
+    <nav class="g-navi">
+      <div class="container nav-wrapper">
         <ul>
           <li class="nav-item"><a href="#concept">CONCEPT</a></li>
           <li class="nav-item"><a href="#feature">FEATURE</a></li>
@@ -20,8 +20,18 @@
           <li class="nav-item"><a href="#store">STORE</a></li>
           <li class="nav-item"><a href="#contact">CONTACT</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <nav class="g-navi-sp">
+      <div class="sp-logo">
+        <p class="logo-title">DAWN Macaron</p>
+      </div>
+      <div class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   </header>
   <section id="main-visual">
     <div class="container mv-wrapper">
@@ -57,7 +67,7 @@
       </div>
       <div class="feature-wrapper">
         <div class="feature-box box-design">
-          <img src="./image/feature01.png" alt="material">
+          <img class="feature-image" src="./image/feature01.png" alt="material">
           <div class="feature-text">
             <span class="feature-number">Point1</span>
             <h3 class="feature-title">安心安全の素材</h3>
@@ -65,7 +75,8 @@
           </div>
         </div>
         <div class="feature-box box-design">
-          <img src="./image/feature02.png" alt="material">
+
+          <img class="feature-image" src="./image/feature02.png" alt="material">
           <div class="feature-text">
             <span class="feature-number">Point2</span>
             <h3 class="feature-title">徹底したこだわり</h3>
@@ -73,7 +84,7 @@
           </div>
         </div>
         <div class="feature-box box-design">
-          <img src="./image/feature03.png" alt="material">
+          <img class="feature-image" src="./image/feature03.png" alt="material">
           <div class="feature-text">
             <span class="feature-number">Point3</span>
             <h3 class="feature-title">可愛らしいパッケージ</h3>
@@ -145,15 +156,15 @@
       </div>
       <div class="lineup-menu">
         <ul class="filter">
-          <li class="lineup-tab active"><a href="#" class="ranking">ranking</a></li>
-          <li class="lineup-tab"><a href="#" class="tea">tea</a></li>
-          <li class="lineup-tab"><a href="#" class="party">party</a></li>
-          <li class="lineup-tab"><a href="#" class="gifts">gifts</a></li>
-          <li class="lineup-tab"><a href="#" class="season">season</a></li>
+          <li class="lineup-tab active"><a href="#" class="ranking" data-filter="ranking">ranking</a></li>
+          <li class="lineup-tab"><a href="#" class="tea" data-filter="tea">tea</a></li>
+          <li class="lineup-tab"><a href="#" class="party" data-filter="party">party</a></li>
+          <li class="lineup-tab"><a href="#" class="gifts" data-filter="gifts">gifts</a></li>
+          <li class="lineup-tab"><a href="#" class="season" data-filter="gifts">season</a></li>
         </ul>
       </div>
       <div class="lineup-wrapper">
-        <div class="lineup-product">
+        <div class="lineup-product" data-category="tea">
           <div class="lineup-image">
             <img src="./image/macaron01.png" alt="レモン">
           </div>
@@ -165,7 +176,7 @@
             <p class="lineup-text about-text">レモンの爽やかな酸味の切れ味が絶妙な逸品です。</p>
           </div>
         </div>
-        <div class="lineup-product">
+        <div class="lineup-product" data-category="party">
           <div class="lineup-image">
             <img src="./image/macaron02.png" alt="ピスタチオ">
           </div>
@@ -177,7 +188,7 @@
             <p class="lineup-text about-text">香り・コク・旨みが凝縮したピスタチオならではの気品漂う逸品です。</p>
           </div>
         </div>
-        <div class="lineup-product">
+        <div class="lineup-product" data-category="gifts">
           <div class="lineup-image">
             <img src="./image/macaron03.png" alt="ストロベリー">
           </div>
